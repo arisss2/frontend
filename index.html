@@ -3,47 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Card</title>
+    <title>Akao47</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f4f4;
         }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f4f6;
-            font-family: Arial, sans-serif;
-        }
-
-        .card {
-            width: 300px;
-            height: 200px;
-            background-color: #4CAF50;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        header {
+            background-color: #881111;
+            color: #fff;
+            padding: 1em 0;
             text-align: center;
-            color: white;
-            font-size: 24px;
-            transition: transform 0.4s ease, background-color 0.4s ease;
         }
 
-        .card:hover {
-            transform: scale(1.1);
-            background-color: #3e8e41;
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+
+        .project {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            width: calc(33% - 2em);
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin-top: 0.5em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #0f5799;
+            padding: 1em 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        Hover over me!
+    <header>
+        <h1>docesss</h1>
+        <nav>
+            <a href="#about">Sobre Mim</a>
+            <a href="#projects">Mixtapes</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá, eu sou menino chicha, um rapper de alto paraiso em goias</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto 1">
+                    <h3>cavalos</h3>
+                    <p>amo cavalos.</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do Projeto 2.</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto 3">
+                    <h3>EP 7 mares</h3>
+                    <p>EP mto massa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Você pode entrar em contato comigo pelo e-mail: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2024 [Akao47]. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
